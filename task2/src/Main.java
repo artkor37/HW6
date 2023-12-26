@@ -42,8 +42,6 @@ public class Main {
         }
 
 
-        //todo
-
 
         System.out.println("Наибольший вес: " + greatest);
         System.out.println("Средний вес: " + average);
