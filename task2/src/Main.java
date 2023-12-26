@@ -41,9 +41,6 @@ public class Main {
             average = third;
         }
 
-
-        //todo
-
         System.out.println("Наибольший вес: " + greatest);
         System.out.println("Средний вес: " + average);
         System.out.println("Наименьший вес: " + smallest);
