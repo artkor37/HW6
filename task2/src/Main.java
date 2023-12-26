@@ -2,6 +2,7 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
+
         System.out.println("\t\t\t***Программа определения весов товаров***\n");
 
         System.out.print("Введите первый вес: ");
@@ -18,14 +19,23 @@ public class Main {
         double smallest = 0;
         //todo дописать логику программы ниже.
 
-        if(first > second && first > third){
+       /* if(first > second && first > third){
             greatest = first;
         }else if(second > first && second > third){
             greatest = second;
         }else if(third > first && third > second){
             greatest = third;
         }
-        if(first < second && first < third){
+
+        */
+
+        greatest = first > second && first > third ? first : second > third ? second : third;
+        smallest = first < second && first <third? first : second < third ? second : third;
+
+
+
+
+        /*if(first < second && first < third){
             smallest = first;
         }else if(second < first && second < third){
             smallest = second;
@@ -33,11 +43,13 @@ public class Main {
             smallest = third;
         }
 
-        if((first > second && first < third) || (first < second && first > third)){
+         */
+
+        if ((first > second && first < third) || (first < second && first > third)) {
             average = first;
-        }else if((second > first && second < third) || (second < first && second > third)){
+        } else if ((second > first && second < third) || (second < first && second > third)) {
             average = second;
-        }else if((third > first && third < second) || (third < first && third > second)){
+        } else if ((third > first && third < second) || (third < first && third > second)) {
             average = third;
         }
 
